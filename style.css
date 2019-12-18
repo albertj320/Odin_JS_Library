@@ -1,0 +1,28 @@
+body {
+    background-color: #4b4b4b;
+    font-family: Helvetica, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    
+}
+
+td, th {
+    border: 1px solid #aaaaaa;
+    padding: 5px;
+}
+
+th {
+    font-weight:  bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even){
+    background-color: #424242;
+}
+
+#form_div{
+    display: none;
+}
