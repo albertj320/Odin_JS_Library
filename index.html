@@ -9,18 +9,20 @@
 </head>
 <body>
     <div id="container">
+        <div id="table_div">
         <table>
             <thead>
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
                     <th>Pages</th>
-                    <th>Read?</th>
+                    <th></th>
                 </tr>
             </thead>
 
             <tbody id="libraryTable"></tbody>
         </table>
+        </div>
         <div>
             <button id="newBook">New Book</button>
         </div>
@@ -33,10 +35,10 @@
                <label for="title">Pages:</label>
                <input type="text" name="pages" id="pages_form"><br/>
                <select name="read" id="read_form">
-                    <option value="read">Read</option>
-                    <option value="unread">Unread</option>
+                    <option value=true>Read</option>
+                    <option value=false>Unread</option>
                </select>
-               <button type="submit">Submit</button>
+               <button type="submit" id="submit_btn">Submit</button>
             </form >
         </div>
     </div>
