@@ -34,6 +34,13 @@ function deleteBook(e){
     setStorage();
 };
 
+function clearForm(){
+    titleInput.value = "";
+    authorInput.value = "";
+    pagesInput.value = "";
+    readInput.value = true;
+}
+
 function toggleRead(e){
     console.table(myLibrary[e]);
     if (myLibrary[e].read == true || myLibrary[e].read == "true"){
@@ -93,8 +100,8 @@ bookForm.addEventListener("submit",(e)=>{
     addBooktoLibrary();
     formDiv.style.display = "none";
     loadButtonState();
-    //clear form
-});
+    clearForm();
+}); //add form validation
 
 newBook_btn.addEventListener('click', (e) => {
     e.preventDefault();
